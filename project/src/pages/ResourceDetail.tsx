@@ -29,7 +29,7 @@ function ResourceDetail() {
   useEffect(() => {
     const fetchResource = async () => {
       try {
-        const res = await axios.get(`https://library-management-system-l5gr.onrender.com/api/v1/resource/${id}`);
+        const res = await axios.get(`https://library-management-system-l5gr.onrender.com/api/v1/resources/resource/${id}`);
         if (res.data && res.data.data) {
           setResource(res.data.data);
         } else {
