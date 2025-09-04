@@ -32,9 +32,9 @@ const corsOptions = {
 app.use(cors(corsOptions));
 
 // API Routes
-app.use("/api/v1/gemini", gemini);
-app.use("/api/v1/resources", resources);
-app.use("/api/v1/catalog", catalog);
+app.use("/api/v1", gemini);
+app.use("/api/v1", resources);
+app.use("/api/v1", catalog);
 
 app.get("/api", (req, res) => {
   res.send("API is running 🚀");
