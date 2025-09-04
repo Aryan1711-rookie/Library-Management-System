@@ -29,7 +29,7 @@ function ResourceDetail() {
   useEffect(() => {
     const fetchResource = async () => {
       try {
-        const res = await axios.get(`http://localhost:5000/api/v1/resource/${id}`);
+        const res = await axios.get(`https://library-management-system-l5gr.onrender.com/api/v1/resource/${id}`);
         if (res.data && res.data.data) {
           setResource(res.data.data);
         } else {
@@ -57,7 +57,7 @@ function ResourceDetail() {
       Focus on the main themes, key ideas, and significance of the work. 
       If you don't have information about this specific book, provide a general description based on the title and author's typical style.`;
       
-      const res = await axios.post('http://localhost:5000/api/v1/gemini', {
+      const res = await axios.post('https://library-management-system-l5gr.onrender.com/api/v1/gemini', {
         message: prompt
       });
       

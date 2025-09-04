@@ -38,7 +38,7 @@ function Resources() {
   useEffect(() =>{
     const fetchResources = async () =>{
       try{
-        const res = await axios.get("http://localhost:5000/api/v1/getresources");
+        const res = await axios.get("https://library-management-system-l5gr.onrender.com/api/v1/getresources");
         setResources(res.data.data);
         //console.log(res.data);
       }

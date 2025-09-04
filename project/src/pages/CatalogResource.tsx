@@ -39,7 +39,7 @@ function CatalogResource() {
     const fetchResource = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:5000/api/v1/catalog/${id}`
+          `https://library-management-system-l5gr.onrender.com/api/v1/catalog/${id}`
         );
         if (res.data?.data) {
           setResource(res.data.data);
